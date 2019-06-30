@@ -52,8 +52,8 @@ async def afk_on_pm(sender):
         if ISAFK:
             if sender.sender_id not in USERS:
                 await sender.reply(
-                    f"Sorry! My boss is AFK due to `{AFKREASON}`."
-                    "\nI'll ping him to look into the message soon 😉."
+                    f"JANGAN GANGGU AINK . AINK LAGI `{AFKREASON}`."
+                    "\n NTAR AJA YA."
                 )
                 USERS.update({sender.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
