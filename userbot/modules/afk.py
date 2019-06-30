@@ -23,7 +23,7 @@ async def mention_afk(mention):
         if ISAFK:
             if mention.sender_id not in USERS:
                 await mention.reply(
-                    f"WEH NJING !!! GW LAGI `{AFKREASON}`."
+                    f"WEH ANJING !!! GW LAGI `{AFKREASON}`."
                     "\nMENDING LU MANDI WAJIB DULU SANA !!!."
                 )
                 USERS.update({mention.sender_id: 1})
@@ -60,9 +60,9 @@ async def afk_on_pm(sender):
             elif sender.sender_id in USERS:
                 if USERS[sender.sender_id] % 5 == 0:
                     await sender.reply(
-                        "Sorry! But my boss is still not here."
-                        "\nTry to ping him a little later. I am sorry 😖."
-                        f"\nHe told me he was busy with `{AFKREASON}`."
+                        "TUNGGU DIRIKU BANGUN WAHAI BAMBANK"
+                        "\nSAYA MASIH DI ALAM MIMPI."
+                        f"\JANGAN GANGGU GW EA BANGSAD🤣 Soalnya gw lagi `{AFKREASON}`."
                     )
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
