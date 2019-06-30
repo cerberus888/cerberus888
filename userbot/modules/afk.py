@@ -23,7 +23,7 @@ async def mention_afk(mention):
         if ISAFK:
             if mention.sender_id not in USERS:
                 await mention.reply(
-                    f"WEH NJING !!! GW LAGI `{AFKREASON}`."
+                    f"WEH ANJING !!! GW LAGI `{AFKREASON}`."
                     "\nMENDING LU MANDI WAJIB DULU SANA !!!."
                 )
                 USERS.update({mention.sender_id: 1})
